@@ -1,0 +1,307 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(/assets/dragn-monster\ hunter.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+
+.flex-cards {
+ display: flex;
+ align-items: flex-end;
+ justify-content: center;
+ gap: 60px;
+ 
+}
+
+.card{
+    /* height: 32rem; */
+    margin: 40px ;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+.card1-background{
+    background-image: url(/assets/background-yellow.jpg);
+    background-position: center;
+}
+
+.card2-background{
+    background-image: url(/assets/background-red.jpg);
+    background-position: center;
+}
+
+.card3-background{
+    background-image: url(/assets/background-blue.jpg);
+    background-position: center;
+}
+
+
+img {
+    height: 528px;
+    width: 400px;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.intro {
+    height: 112px;
+    width: 400px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0.1px;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    transition: .5s;
+    text-align: center;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+span {
+    font-weight: bold;
+}
+
+.card:hover{
+    cursor: pointer;
+    color: black;
+    opacity: 0.8;
+    
+}
+
+.card:hover .intro{
+    height: 180px;
+    bottom: 122px;
+    background: black;
+}
+
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover img {
+    transform: scale(1.1) rotate(-3deg);
+}
+
+
+/* button start fight*/
+
+.buttons-flex {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 53px;
+
+}
+
+.btn {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background:#47d68f ;
+    width: 160px;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(251, 251, 251);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform ;
+}
+
+.btn:hover, btn:focus, btn:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+  
+  /*button start fight*/
+
+  /* button show and hide */
+
+  .btn2 {
+    /* position: absolute; */ 
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background:#5d4e4c ;
+    width: 13rem;
+    padding: 17px;
+    /* margin-left:53.5rem;
+    margin-top: 8.5rem; */
+    text-align: center;
+    text-decoration: none;
+    text-transform: lowercase;
+    color: rgb(251, 251, 251);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(212, 13, 13, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform ;
+}
+
+.btn2:hover, btn2:focus, btn2:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.show-message {
+    display: none;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #0094e922;
+    background-image: linear-gradient(312deg, #0094e956 0%, #80d0c732 100%);
+    color: #fff;
+    padding: 20px;
+}
+
+/* button show and hide */
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+@media screen and (max-width: 1229px) {
+    body {
+        overflow: auto;
+        background-size: auto;
+    }
+
+    .flex-cards {
+        gap: 10px;
+        margin-top: 70px;   /*eu */
+    }
+
+    .card {
+        margin: 20px;
+        
+    }
+
+    .intro {
+        width: 100%;
+        padding: 0;
+    }
+
+    .card:hover .intro {
+        bottom: 0;
+    }
+    /* pana aici sandra */
+
+    img {
+        width: 365px;
+        height: 496px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    body {
+        overflow: auto;
+        background-size: auto;
+    }
+
+    .flex-cards {
+        gap: 10px;
+        margin-top: 70px;   /*eu */
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 20px;
+        
+    }
+
+    .intro {
+        width: 100%;
+        padding: 0;
+    }
+
+    .card:hover .intro {
+        bottom: 0;
+    }
+    /* pana aici sandra */
+
+    img {
+        height: 550px;
+        width: 50%;
+        margin: auto;
+        display: block;
+        
+    }
+}
+
+@media screen and (max-width: 700px) { 
+
+    img {
+        height: 479px;
+        width: 62%;
+        margin: auto;
+        display: block;
+        
+    }
+    
+}
+
+@media screen and (max-width: 550px) { 
+
+    img {
+        height: 416px;
+        width: 62%;
+        margin: auto;
+        display: block;
+        
+    }
+    
+}
+
+@media screen and (max-width: 425px) { 
+
+    img {
+        height: 416px;
+        width: 80%;
+        margin: auto;
+        display: block;
+        
+    }
+    
+}

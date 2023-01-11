@@ -1,0 +1,36 @@
+
+
+
+interfata:
+background cu eroi (din jocuri)
+un buton de SHOW HEROES
+trei figuri pentru eroi
+avatar erou
+ceva detalii (nume, HP, abilitati, samd)
+un buton de START FIGHT
+specificatii:
+prima data cand intri pe pagina, avem doar background-ul vizibil + butonul de SHOW HEROES
+la click pe buton, se ascunde butonul si apar divurile cu eroi + butonul de START FIGHT
+la click pe butonul de START FIGHT se ascund eroii si apare un mesaj: "Pentru detaliile jocului deschide Console"
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+ <input  type="checkbox" id="checkBox">
+<input type="button" id='button' value = "Click me" onclick="FbotonOn()">
+<p id="texto"></p>
+</body>
+</html>
+
+<script type="text/javascript">
+function FbotonOn() { 
+
+    if(document.getElementById('checkBox').checked)
+        document.getElementById('texto').innerHTML = "Thank you";
+    else
+        document.getElementById('texto').innerHTML = "Good Bye";
+}
