@@ -1,5 +1,4 @@
 //game core
-
 class Hero {
     constructor(name, HP) {
         this.name = name;
