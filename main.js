@@ -1,39 +1,3 @@
-//deea code
-
-// function showHeroes() { 
-//     document.getElementById("hero").style.display = "flex";
-//     document.getElementById("title").style.display = "none";
-//     battlelog.style.display = "inherit";
-//     start.style.display = "none";
-//  }
-
-// function roundResults(){
-//     document.getElementById("battlelogContainer").innerHTML = res;
-//     modal.style.display = "block";
-// }
-
-// function clearModal(e) {
-//     if (e.target == modal) {
-//         modal.style.display = 'none';
-//     }
-// }
-
-
-// start.addEventListener('click', showHeroes);
-// battlelog.addEventListener('click', roundResults);
-// window.addEventListener('click', clearModal);
-
-
-
-
-//deaa code
-
-
-
-
-
-
-
 //game core
 
 class Hero {
